@@ -2,15 +2,15 @@ from pfaw import Fortnite, Platform, Mode
 
 fortnite = Fortnite(fortnite_token='FORTNITE_TOKEN', launcher_token='LAUNCHER_TOKEN',
                     password='PASSWORD', email='EMAIL')
-                    player = fortnite.player(username='Smitty Werbenjagermanjensen')
+                    player = fortnite.player(username='tejaaaki')
 
 print(player.name)
 print(player.id)
 
 # prints:
-# Smitty Werbenjagermanjensen
+# tejaaaki
 # 9c9212603304472d831c03d0978d2bc1
-stats = fortnite.battle_royale_stats(username='Smitty Werbenjagermanjensen', platform=Platform.pc)
+stats = fortnite.battle_royale_stats(username='tejaaaki', platform=Platform.pc)
 
 print(f'Solo Wins: {stats.solo.wins}')
 print(f'Duo Wins: {stats.duo.wins}')
